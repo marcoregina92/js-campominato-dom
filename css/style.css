@@ -69,3 +69,7 @@ header h1 {
 .highlight {
     background-color: darkolivegreen;
 }
+
+#imgGameOver {
+    width: 100%;
+}

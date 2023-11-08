@@ -41,7 +41,6 @@ btnPlay.addEventListener("click", function () {
     for (let i = 1; i <= numCelle; i++) {
         let cella = newCell(i, celleBomba);
         grid.appendChild(cella);
-        grid.appendChild(cella);
         if (numCelle == 81) {
             cella.classList.add("medium");
         } else if (numCelle == 49) {
@@ -50,16 +49,21 @@ btnPlay.addEventListener("click", function () {
     }
 });
 
-function newCell(numero) {
+function newCell(numero, celleBomba) {
     const cella = document.createElement("div");
     cella.classList.add("square");
 
 
     cella.addEventListener("click", function () {
 
+        if (celleBomba.includes(numero)) {
+            console.log("Hai perso");
+            grid.innerHTML = '<img id="imgGameOver" src="giphy.gif" alt="">';
+        } else {
         console.log("cella selezionata", numero);
         cella.innerHTML = [numero];
         cella.classList.toggle("highlight");
+        }
     });
 
     return cella;
