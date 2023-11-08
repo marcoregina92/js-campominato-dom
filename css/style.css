@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: url(https://static.vecteezy.com/ti/foto-gratuito/p2/15937417-erba-verde-texture-di-sfondo-erba-giardino-concetto-utilizzato-per-fare-sfondo-verde-campo-da-calcio-golf-in-erba-prato-verde-pattern-texture-di-sfondo-gratuito-foto.jpg);
+}
+
+header {
+    height: 80px;
+    background-color: white;
+    color:  black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 50px;
+    margin-left: 1em;
+}
+
+#boxLevel {
+    margin-right: 1em;
+}
+
+#btnPlay {
+    font-size: 20px;
+    margin-left: 1em;
+    color: green;
+}
+
+#grid {
+    width: 750px;
+    height:  750px;
+    background-color: grey;
+    margin: 80px auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid black;
+}
+
+.square {
+    border: solid 1px;
+    height: calc(100% / 10 );
+    width: calc(100% / 10 );
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.easy {
+    height: calc(100% / 10 );
+    width: calc(100% / 10 );
+}
+.medium {
+    height: calc(100% / 9 );
+    width: calc(100% / 9 );
+}
+.hard {
+    height: calc(100% / 7 );
+    width: calc(100% / 7 );
+}
+
+.highlight {
+    background-color: darkolivegreen;
+}
